@@ -1,0 +1,16 @@
+{
+  "name": "playlist-ai-app",
+  "version": "1.0.0",
+  "description": "AI playlist generator based on 10 user answers",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "music",
+    "playlist",
+    "questionnaire"
+  ],
+  "license": "ISC",
+  "type": "commonjs"
+}

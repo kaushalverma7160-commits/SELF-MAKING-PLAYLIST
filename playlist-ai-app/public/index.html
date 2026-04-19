@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Playlist Pilot</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Instrument+Serif:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="orb orb-one"></div>
+    <div class="orb orb-two"></div>
+
+    <main class="page-shell">
+      <section class="hero-card">
+        <div class="hero-copy">
+          <p class="eyebrow">Questionnaire-driven music AI</p>
+          <div class="brand-heading">
+            <img src="./logo.svg" alt="Playlist AI logo" class="brand-logo" />
+            <h1>DilSe Playlist AI</h1>
+          </div>
+          <p class="lede">
+            Answer a short set of vibe questions and the app will generate a
+            tailored playlist, mood tags, and a listening summary.
+          </p>
+          <div class="hero-notes">
+            <span>10 questions</span>
+            <span>12-song playlist</span>
+            <span>Instant recommendations</span>
+          </div>
+        </div>
+
+        <div class="hero-panel">
+          <img src="./illuminated-car-dashboard-with-digital-display-and-controls-at-night-free-photo.jpg" alt="Illuminated car dashboard" class="hero-panel-image" />
+        </div>
+      </section>
+
+      <section class="app-grid">
+        <form id="quiz-form" class="quiz-card"></form>
+
+        <aside class="results-card">
+          <div class="results-header">
+            <p class="eyebrow">Your output</p>
+            <h2>AI playlist</h2>
+            <p id="result-summary" class="muted">
+              Fill in the questionnaire to generate your personalized mix.
+            </p>
+          </div>
+
+          <div id="insights" class="insights" hidden></div>
+
+          <div class="playlist-header">
+            <h3>Tracklist</h3>
+            <button id="reset-button" type="button" class="ghost-button">
+              Reset
+            </button>
+          </div>
+
+          <div id="playlist" class="playlist empty">
+            <p>Your songs will appear here after the 10th answer.</p>
+          </div>
+        </aside>
+      </section>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+  </html>
