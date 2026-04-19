@@ -55,5 +55,5 @@ const server = http.createServer((req, res) => {
 });
 
 server.listen(PORT, () => {
-  console.log(`Playlist AI app running at http://localhost:${POrT}`);
+  console.log(`Playlist AI app running at http://localhost:${PORT}`);
 });
